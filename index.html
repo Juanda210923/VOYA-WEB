@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="VOYA: descubre destinos y planifica tu próximo viaje.">
+<title>VOYA — Tu próxima aventura</title>
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+<header class="header"><div class="header__container">
+<a class="header__brand" href="index.html"><span class="brand-mark" aria-hidden="true">✈</span><span>VOYA</span></a>
+<nav class="nav" aria-label="Navegación principal"><ul class="nav__list"><li><a class="nav__link active" href="index.html">Inicio</a></li><li><a class="nav__link" href="explorar.html">Explorar</a></li><li><a class="nav__link" href="ofertas.html">Ofertas</a></li><li><a class="nav__link" href="favoritos.html">Favoritos</a></li><li><a class="nav__link" href="soporte.html">Soporte</a></li></ul></nav>
+<div class="header__actions"><a class="btn btn--pill btn--primary" href="login.html">Iniciar sesión</a></div>
+</div></header>
+
+<main>
+<section class="hero"><div class="hero__container"><div class="hero__content">
+<span class="badge badge--gold">Innovación · Tecnología · Soluciones</span>
+<h1 class="hero__title">Tu próxima aventura comienza con <span class="text-gold">VOYA</span></h1>
+<p class="hero__slogan">«Si hay un destino, VOYA encuentra el camino»</p>
+<p>Descubre destinos increíbles, encuentra opciones para tu viaje y reúne la inspiración que necesitas en un solo lugar.</p>
+<div class="hero__cta-group"><a class="btn btn--pill btn--primary" href="explorar.html">Explorar destinos</a><a class="btn btn--pill btn--outline-light" href="ofertas.html">Descubrir ofertas</a></div>
+</div></div>
+<div class="search-box"><form class="search-box__form" action="explorar.html" method="get">
+<div class="search-box__field"><label class="search-box__label" for="destination">Destino</label><input class="search-box__input" id="destination" name="destino" placeholder="¿A dónde quieres ir?"></div>
+<div class="search-box__field"><label class="search-box__label" for="dates">Fechas</label><input class="search-box__input" id="dates" name="fechas" placeholder="Elige tus fechas"></div>
+<div class="search-box__field"><label class="search-box__label" for="travelers">Viajeros</label><select class="search-box__input" id="travelers" name="viajeros"><option>1 viajero</option><option selected>2 viajeros</option><option>Familia</option></select></div>
+<button class="btn btn--pill btn--primary search-box__btn" type="submit">Buscar destinos →</button>
+</form></div>
+</section>
+<section class="section home-after-hero"><div class="container"><div class="section-heading"><span class="eyebrow">Inspírate para viajar</span><h2>Destinos que te harán soñar</h2><p>Una selección de lugares para empezar a imaginar tu próxima experiencia.</p></div>
+<div class="grid grid--3">
+<article class="destination-card"><img class="destination-card__image" src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=900&q=80" alt="Panorámica de Madrid"><div class="destination-card__body"><div class="card-row"><h3>Madrid, España</h3><span class="heart" aria-label="Favorito">♥</span></div><p class="destination-card__meta">Cultura · Arquitectura · Gastronomía</p><a class="btn btn--outline btn--small" href="destino.html">Ver destino →</a></div></article>
+<article class="destination-card"><img class="destination-card__image" src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=900&q=80" alt="Costa caribeña de Cartagena"><div class="destination-card__body"><div class="card-row"><h3>Cartagena, Colombia</h3><span class="heart" aria-label="Favorito">♥</span></div><p class="destination-card__meta">Mar · Historia · Encanto colonial</p><a class="btn btn--outline btn--small" href="explorar.html">Explorar →</a></div></article>
+<article class="destination-card"><img class="destination-card__image" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80" alt="Torre Eiffel en París"><div class="destination-card__body"><div class="card-row"><h3>París, Francia</h3><span class="heart" aria-label="Favorito">♥</span></div><p class="destination-card__meta">Arte · Romance · Museos</p><a class="btn btn--outline btn--small" href="explorar.html">Explorar →</a></div></article>
+</div><div style="text-align:center;margin-top:28px"><a class="btn btn--primary btn--pill" href="explorar.html">Ver todos los destinos</a></div></div></section>
+<section class="section section--cream"><div class="container"><div class="section-heading"><span class="eyebrow">Todo en un mismo lugar</span><h2>¿Qué te gustaría descubrir?</h2><p>Encuentra inspiración según el tipo de experiencia que buscas.</p></div><div class="grid grid--4">
+<a class="category-card" href="explorar.html"><div class="category-icon">⌖</div><h3>Atracciones</h3><p>Monumentos, cultura y lugares imprescindibles.</p><strong>Explorar →</strong></a>
+<a class="category-card" href="explorar.html"><div class="category-icon">⌂</div><h3>Hoteles</h3><p>Ideas de alojamiento para tu próxima escapada.</p><strong>Explorar →</strong></a>
+<a class="category-card" href="explorar.html"><div class="category-icon">♨</div><h3>Restaurantes</h3><p>Sabores locales y experiencias gastronómicas.</p><strong>Explorar →</strong></a>
+<a class="category-card" href="ofertas.html"><div class="category-icon">☼</div><h3>Lugares vacacionales</h3><p>Encuentra inspiración para desconectar.</p><strong>Ver opciones →</strong></a>
+</div></div></section>
+<section class="section"><div class="container"><div class="promo-banner"><div><span class="eyebrow">Ofertas para inspirarte</span><h2>Viaja más. Descubre más. Vive más.</h2><p>Explora experiencias y paquetes de ejemplo para imaginar tu próxima aventura.</p></div><a class="btn btn--pill btn--primary" href="ofertas.html">Ver ofertas →</a></div></div></section>
+<section class="section section--cream"><div class="container"><div class="section-heading"><span class="eyebrow">Experiencias</span><h2>Viajar debería sentirse sencillo</h2><p>VOYA reúne inspiración e información para ayudarte a organizar tus ideas de viaje.</p></div><div class="grid grid--3">
+<article class="review-card"><p>“Me gusta poder descubrir destinos y tener las ideas organizadas en un mismo lugar.”</p><div class="stars">★★★★★</div><div class="review-person"><div class="avatar">LM</div><div><strong>Laura M.</strong><p>Testimonio demostrativo</p></div></div></article>
+<article class="review-card"><p>“La presentación de las opciones hace que empezar a planear sea más fácil.”</p><div class="stars">★★★★★</div><div class="review-person"><div class="avatar">CR</div><div><strong>Carlos R.</strong><p>Testimonio demostrativo</p></div></div></article>
+<article class="review-card"><p>“Encuentro inspiración para pensar en nuevas experiencias y lugares.”</p><div class="stars">★★★★★</div><div class="review-person"><div class="avatar">AP</div><div><strong>Ana P.</strong><p>Testimonio demostrativo</p></div></div></article>
+</div><p class="notice">Las reseñas, imágenes y datos mostrados en esta web son demostrativos y no representan ofertas o servicios verificados.</p></div></section>
+</main>
+<footer class="footer"><div class="container"><div class="footer__grid">
+<div><a class="header__brand" href="index.html"><span class="brand-mark">✈</span><span style="color:#fff">VOYA</span></a><p style="margin-top:16px">Si hay un destino, VOYA encuentra el camino. Descubre lugares, organiza ideas y encuentra inspiración para tu próximo viaje.</p></div>
+<div><h3>Explora VOYA</h3><ul class="footer__links"><li><a href="explorar.html">Destinos turísticos</a></li><li><a href="ofertas.html">Ofertas y experiencias</a></li><li><a href="favoritos.html">Tus favoritos</a></li><li><a href="login.html">Iniciar sesión</a></li></ul></div>
+<div><h3>Estamos para ayudarte</h3><ul class="footer__links"><li><a href="soporte.html">Centro de soporte</a></li><li>Correo: contacto@ejemplo.com</li><li>Horario: Lun–Vie, 9:00–17:00</li></ul><p style="margin-top:10px;font-size:.78rem">Datos de contacto ilustrativos.</p></div>
+</div><div class="footer__bottom"><span>© 2026 VOYA · Proyecto académico</span><span>Innovación · Tecnología · Soluciones</span></div></div></footer>
+</body>
+</html>
