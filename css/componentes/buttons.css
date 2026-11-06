@@ -1,0 +1,8 @@
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border:1px solid transparent;border-radius:8px;font-weight:800;font-size:.9rem;transition:transform .2s,background .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn--pill{border-radius:var(--pill)}
+.btn--primary{background:var(--gold);color:#fff;box-shadow:0 5px 14px rgba(229,169,19,.18)}
+.btn--primary:hover{background:var(--gold-hover)}
+.btn--outline{border-color:var(--border);background:#fff;color:var(--brown)}
+.btn--outline-light{border-color:rgba(255,255,255,.65);color:#fff;background:rgba(255,255,255,.08)}
+.btn--small{padding:9px 14px;font-size:.82rem}
