@@ -1,0 +1,7 @@
+.eyebrow{display:inline-block;color:#8a6507;text-transform:uppercase;letter-spacing:.12em;font-size:.76rem;font-weight:800;margin-bottom:12px}
+h1,h2,h3,h4{font-family:var(--heading);line-height:1.2}
+h1{font-size:clamp(2.35rem,5vw,4.5rem);font-weight:800;letter-spacing:-.04em}
+h2{font-size:clamp(1.8rem,3vw,2.65rem);letter-spacing:-.03em;margin-bottom:14px}
+h3{font-size:1.1rem;margin-bottom:8px}
+p{color:var(--muted)}
+.text-gold{color:var(--gold)}
