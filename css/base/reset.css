@@ -1,0 +1,15 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);line-height:1.65;background:#fff}
+img{display:block;max-width:100%;object-fit:cover}
+a{color:inherit;text-decoration:none}
+button,input,textarea,select{font:inherit}
+button,.btn{cursor:pointer}
+
+/* Accesibilidad */
+:focus-visible{outline:3px solid #7b5b09;outline-offset:3px}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important}
+  }
