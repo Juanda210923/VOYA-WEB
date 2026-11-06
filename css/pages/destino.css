@@ -1,0 +1,16 @@
+/* Estructura de dos columnas */
+.destination-detail{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:start}
+.destination-detail__image{width:100%;height:420px;border-radius:18px}
+
+/* Lista de datos */
+.info-list{list-style:none;display:grid;gap:12px;margin-top:12px}
+.info-list li{display:flex;justify-content:space-between;gap:16px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.info-list li:last-child{border-bottom:0;padding-bottom:0}
+
+@media(max-width:900px){
+  .destination-detail{grid-template-columns:1fr}
+}
+
+@media(max-width:600px){
+  .destination-detail__image{height:270px}
+}
