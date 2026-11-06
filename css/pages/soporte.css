@@ -1,0 +1,11 @@
+/* Contacto: texto + formulario */
+.form-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px;align-items:start}
+
+/* Preguntas frecuentes */
+.faq details{padding:17px 0;border-bottom:1px solid var(--border)}
+.faq summary{font-weight:800;cursor:pointer}
+.faq details p{padding-top:10px}
+
+@media(max-width:900px){
+  .form-layout{grid-template-columns:1fr}
+}

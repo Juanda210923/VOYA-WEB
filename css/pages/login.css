@@ -1,0 +1,11 @@
+.login-page{min-height:100vh;display:grid;place-items:center;padding:30px;background:linear-gradient(135deg,#f7f2e7,#fff)}
+.login-card{width:min(440px,100%);background:#fff;border:1px solid var(--border);border-radius:22px;padding:36px;box-shadow:var(--shadow)}
+.login-card .header__brand{margin-bottom:25px}
+.login-card h1{font-size:2rem;margin-bottom:10px}
+.login-card>p{margin-bottom:25px}
+.login-links{display:flex;justify-content:space-between;gap:10px;font-size:.83rem;color:#8a6507;font-weight:700;margin-top:15px}
+
+@media(max-width:600px){
+  .login-card{padding:24px}
+  .login-links{flex-direction:column}
+}

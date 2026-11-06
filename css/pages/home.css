@@ -1,0 +1,33 @@
+/* Hero */
+.hero{position:relative;min-height:590px;display:flex;align-items:center;color:#fff;background:linear-gradient(90deg,rgba(24,22,18,.82),rgba(24,22,18,.36)),url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=85') center/cover}
+.hero__container{width:min(1160px,calc(100% - 40px));margin:auto;padding:80px 0 130px}
+.hero__content{max-width:690px}
+.hero__title{margin-bottom:20px}
+.hero__slogan{color:#f5e8c8;font-size:1.05rem;font-weight:600;margin-bottom:25px}
+.hero__content>p:not(.hero__slogan){color:#f4f1eb;font-size:1.08rem;max-width:610px;margin-bottom:25px}
+.hero__cta-group{display:flex;gap:12px;flex-wrap:wrap}
+
+/* Insignia */
+.badge{display:inline-block;padding:7px 12px;border-radius:var(--pill);font-size:.76rem;font-weight:800;letter-spacing:.03em}
+.badge--gold{background:rgba(229,169,19,.17);border:1px solid rgba(229,169,19,.7);color:#ffdc80;margin-bottom:20px}
+
+/* Caja de búsqueda flotante sobre el hero */
+.search-box{position:absolute;left:50%;bottom:-48px;transform:translateX(-50%);width:min(1080px,calc(100% - 40px));padding:18px;background:#fff;color:var(--ink);border-radius:18px;box-shadow:var(--shadow)}
+
+/* Sección que sigue al hero (deja espacio para la caja flotante) */
+.home-after-hero{padding-top:115px}
+
+@media(max-width:900px){
+  .hero{min-height:640px}
+  .hero__container{padding-bottom:190px}
+  .search-box{bottom:-85px}
+  .home-after-hero{padding-top:135px}
+}
+
+@media(max-width:600px){
+  .hero{min-height:690px;background-position:58% center}
+  .hero__container{width:calc(100% - 28px);padding:55px 0 250px}
+  .hero__title{font-size:2.6rem}
+  .search-box{width:calc(100% - 28px);bottom:-150px;padding:14px}
+  .home-after-hero{padding-top:195px}
+}
