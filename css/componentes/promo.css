@@ -1,0 +1,6 @@
+.promo-banner{display:flex;justify-content:space-between;align-items:center;gap:25px;padding:34px;border-radius:18px;background:linear-gradient(120deg,#3B3224,#2B2317);color:#fff}
+.promo-banner p{margin-top:8px}
+
+@media(max-width:600px){
+  .promo-banner{align-items:flex-start;flex-direction:column;padding:25px}
+}

@@ -1,0 +1,15 @@
+/* Campos (también los usa el buscador: .search-box__input) */
+.search-box__input,.form-control{width:100%;border:1px solid var(--border);background:#faf9f6;border-radius:8px;padding:12px 13px;color:var(--ink);min-width:0}
+.search-box__input:focus,.form-control:focus,textarea:focus{outline:2px solid rgba(229,169,19,.45);border-color:var(--gold)}
+textarea.form-control{min-height:140px;resize:vertical}
+
+/* Grupos de formulario */
+.form-group{display:flex;flex-direction:column;gap:7px;margin-bottom:17px}
+.form-group label{font-size:.85rem;font-weight:800}
+
+/* Panel contenedor */
+.form-panel{background:#fff;border:1px solid var(--border);border-radius:18px;padding:30px;box-shadow:var(--shadow)}
+
+@media(max-width:600px){
+  .form-panel{padding:24px}
+}

@@ -1,0 +1,33 @@
+/* Base común de tarjetas */
+.destination-card,.offer-card,.review-card,.category-card,.info-card{background:#fff;border:1px solid rgba(0,0,0,.05);border-radius:var(--radius);overflow:hidden;box-shadow:0 4px 16px rgba(35,29,20,.045);transition:transform .2s,box-shadow .2s}
+.destination-card:hover,.offer-card:hover,.category-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.card-row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.heart{color:var(--red);font-size:1.25rem}
+
+/* Tarjeta de destino */
+.destination-card__image{height:220px;width:100%}
+.destination-card__body,.offer-card__body{padding:20px}
+.destination-card__meta{font-size:.82rem;color:var(--muted);margin:7px 0 12px}
+
+/* Tarjeta de categoría */
+.category-card{padding:25px 20px}
+.category-icon{width:48px;height:48px;display:grid;place-items:center;background:var(--gold-light);border-radius:14px;font-size:1.4rem;margin-bottom:17px}
+.category-card p{font-size:.9rem;margin-bottom:14px}
+
+/* Tarjeta de oferta */
+.offer-card__image{height:190px;width:100%}
+.price{font-family:var(--heading);font-weight:800;font-size:1.2rem;color:var(--brown)}
+.price small{font-family:var(--body);font-weight:500;font-size:.78rem;color:var(--muted)}
+
+/* Tarjeta de reseña */
+.review-card{padding:25px;background:var(--cream);border:0}
+.stars{color:var(--gold);letter-spacing:2px;margin:10px 0}
+.review-person{display:flex;align-items:center;gap:12px;margin-top:18px}
+.avatar{width:42px;height:42px;border-radius:50%;background:#e5d7b4;display:grid;place-items:center;font-weight:800;color:var(--brown)}
+
+/* Tarjeta de información */
+.info-card{padding:22px;margin-bottom:18px}
+
+@media(max-width:600px){
+  .destination-card__image{height:230px}
+}

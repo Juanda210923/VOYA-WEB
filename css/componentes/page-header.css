@@ -1,0 +1,9 @@
+/* Encabezado de las páginas internas */
+.page-hero{padding:74px 0;background:linear-gradient(110deg,#f7f2e7,#fff);border-bottom:1px solid var(--border)}
+.page-hero p{max-width:700px;margin-top:12px;font-size:1.04rem}
+.breadcrumbs{font-size:.85rem;color:var(--muted);margin-bottom:20px}
+.breadcrumbs a{color:#8a6507;font-weight:700}
+
+@media(max-width:600px){
+  .page-hero{padding:50px 0}
+}

@@ -1,0 +1,16 @@
+/* Formulario de búsqueda (home y explorar) */
+.search-box__form{display:grid;grid-template-columns:1.5fr 1fr 1fr auto;gap:14px;align-items:end}
+.search-box__field{display:flex;flex-direction:column;gap:5px}
+.search-box__label{font-size:.75rem;font-weight:800;color:var(--brown)}
+
+@media(max-width:900px){
+  .search-box__form{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .search-box__btn{width:100%}
+}
+
+@media(max-width:600px){
+  .search-box__form{grid-template-columns:1fr 1fr;gap:10px}
+  .search-box__field:first-child{grid-column:1/-1}
+  .search-box__input{padding:10px;font-size:.84rem}
+  .search-box__btn{grid-column:1/-1}
+}
