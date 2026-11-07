@@ -14,3 +14,12 @@
   .search-box__input{padding:10px;font-size:.84rem}
   .search-box__btn{grid-column:1/-1}
 }
+
+/* Contador de viajeros ("Familia") */
+.travelers-counter{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:3px;padding:5px 6px;border:1px solid var(--border);border-radius:8px;background:#faf9f6}
+.travelers-counter[hidden]{display:none}
+.counter-btn{width:40px;height:40px;border:1px solid var(--border);border-radius:50%;background:#fff;color:var(--brown);font-size:1.4rem;font-weight:800;line-height:1}
+.counter-btn:hover{background:var(--gold-light);border-color:var(--gold)}
+.counter-btn:disabled{opacity:.4;cursor:not-allowed}
+.counter-value{min-width:2ch;text-align:center;font-weight:800;font-size:1.05rem}
+
