@@ -1,0 +1,183 @@
+<!-- inicio de pie/plantilla:-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="VOYA: descubre destinos y planifica tu próximo viaje.">
+    <title>VOYA — España</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<!-- Cuerpo/menu -->
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a class="header__brand" href="../index.html"><span class="brand-mark"
+                    aria-hidden="true">✈</span><span>VOYA</span></a>
+            <nav class="nav" aria-label="Navegación principal">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="../index.html">Inicio</a></li>
+                    <li><a class="nav__link active" href="explorar.html">Explorar</a></li>
+                    <li><a class="nav__link" href="ofertas.html">Ofertas</a></li>
+                    <li><a class="nav__link" href="favoritos.html">Favoritos</a></li>
+                    <li><a class="nav__link" href="soporte.html">Soporte</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions"><a class="btn btn--pill btn--primary" href="login.html">Iniciar sesión</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- secciones -->
+    <main>
+
+        <!-- sección #1-->
+        <section class="page-hero">
+            <div class="container">
+                <div class="breadcrumbs"><a href="../index.html">Inicio</a> / <a href="explorar.html">Explorar</a> /
+                    <span id="crumb-name">España</span></div><span class="eyebrow">Detalle del destino</span>
+                <div class="dest-head">
+                    <img id="dest-flag" src="https://flagcdn.com/es.svg" alt="Bandera de España" width="72" height="48">
+                    <h1 id="dest-name">España</h1>
+                </div>
+                <p id="dest-intro">Historia, arquitectura y cultura en uno de los destinos más visitados de Europa.</p>
+            </div>
+        </section>
+
+        <!-- sección #2-->
+        <section class="section">
+            <div class="container">
+                <div class="destination-detail">
+                    <div><img class="destination-detail__image" id="dest-image"
+                            src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=1200&q=85"
+                            alt="Vista urbana de Madrid">
+                        <div class="info-card" style="margin-top:22px">
+                            <h2 style="font-size:1.5rem">Sobre este destino</h2>
+                            <p id="dest-about">Descubre la historia y los espacios monumentales de Madrid. Esta ficha sirve como ejemplo
+                                de cómo VOYA puede organizar información útil antes de una visita.</p>
+                            <div class="stars">★★★★★ <span
+                                    style="color:var(--muted);font-size:.8rem;letter-spacing:0">Valoración </span></div>
+                            <div class="dest-actions">
+                                <button class="btn btn--primary btn--small" id="btn-fav" type="button" aria-pressed="false">♥️ Añadir a favoritos</button> 
+                                <button class="btn btn--primary btn--small" id="btn-itinerary" type="button">📋 Añadir a la lista</button>
+                            </div>
+                        </div>
+
+                            <!-- Mapeo/Coordenadas visuales:-->
+                        <div class="info-card">
+                            <span class="eyebrow">Ubicación geográfica</span>
+                            <h3>Mapa del destino</h3>
+                            <div class="map-box" id="dest-map" role="img" aria-label="Mapa de ubicación del destino">
+                                <div class="map-box__placeholder">
+                                    <span class="map-box__pin" aria-hidden="true">📍</span>
+                                    <strong id="map-place">Madrid, España</strong>
+                                    <small id="map-coords">40.4168° N, 3.7038° O</small>
+                                </div>
+                            </div>
+                            <p class="map-note">El mapa se cargará con las coordenadas del destino.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="info-card"><span class="eyebrow">Información global </span>
+                            <h3>Datos del destino</h3>
+                            <ul class="info-list">
+                                <li><span>Capital</span><strong id="dest-capital">Madrid</strong></li>
+                                <li><span>Región</span><strong id="dest-region">Europa</strong></li>
+                                <li><span>Subregión</span><strong id="dest-subregion">Europa meridional</strong></li>
+                                <li><span>Población</span><strong id="dest-population">47.519.628</strong></li>
+                                <li><span>Idiomas</span><strong id="dest-languages">Español</strong></li>
+                                <li><span>Moneda</span><strong id="dest-currency">Euro (€)</strong></li>
+                                
+                            </ul>
+                        </div>
+
+                        <!-- Tarjeta de clima y pronosticos: -->
+                        <div class="info-card" id="weather-card">
+                            <h3>Clima y recomendaciones</h3>
+                            <p>☀️ Temperatura actual: <span id="weather-temp">22 °C</span></p>
+                            <p>🍃 Viento: <span id="weather-wind">12 km/h</span></p>
+                            <p>🌧️ Probabilidad de lluvia: <span id="weather-rain">10 %</span></p>
+
+<!-- Bloque de los de la semana -->
+                            <h4 class="forecast-title">📅 Pronóstico</h4>
+                            <div class="forecast" id="weather-forecast">
+                                <div class="forecast__day">
+                                    <span class="forecast__name">Lun</span>
+                                    <span class="forecast__icon" aria-hidden="true">☀️</span>
+                                    <strong class="forecast__max">26°</strong><!-- negrilla -->
+                                    <span class="forecast__min">15°</span>
+                                </div>
+                                <div class="forecast__day">
+                                    <span class="forecast__name">Mar</span>
+                                    <span class="forecast__icon" aria-hidden="true">⛅</span>
+                                    <strong class="forecast__max">24°</strong>
+                                    <span class="forecast__min">14°</span>
+                                </div>
+                                <div class="forecast__day">
+                                    <span class="forecast__name">Mié</span>
+                                    <span class="forecast__icon" aria-hidden="true">🌧️</span>
+                                    <strong class="forecast__max">22°</strong>
+                                    <span class="forecast__min">13°</span>
+                                </div>
+                                <div class="forecast__day">
+                                    <span class="forecast__name">Jue</span>
+                                    <span class="forecast__icon" aria-hidden="true">☀️</span>
+                                    <strong class="forecast__max">25°</strong>
+                                    <span class="forecast__min">14°</span>
+                                </div>
+                                <div class="forecast__day">
+                                    <span class="forecast__name">Vie</span>
+                                    <span class="forecast__icon" aria-hidden="true">⛅</span>
+                                    <strong class="forecast__max">23°</strong>
+                                    <span class="forecast__min">13°</span>
+                                </div>
+                            </div>
+
+                            <p class="map-note">Consulta el pronóstico actualizado antes de salir y lleva calzado cómodo
+                                para recorrer la ciudad.</p>
+                        </div>
+
+                        <a class="btn btn--primary btn--pill" href="explorar.html">← Volver a explorar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- pie de paginas -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div><a class="header__brand" href="../index.html"><span class="brand-mark">✈</span><span
+                            style="color:#fff">VOYA</span></a>
+                    <p style="margin-top:16px">Si hay un destino, VOYA encuentra el camino. Descubre lugares, organiza
+                        ideas y encuentra inspiración para tu próximo viaje.</p>
+                </div>
+
+                <div>
+                    <h3>Explora VOYA</h3>
+                    <ul class="footer__links">
+                        <li><a href="explorar.html">Destinos turísticos</a></li>
+                        <li><a href="ofertas.html">Ofertas y experiencias</a></li>
+                        <li><a href="favoritos.html">Tus favoritos</a></li>
+                        <li><a href="login.html">Iniciar sesión</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Estamos para ayudarte</h3>
+                    <ul class="footer__links">
+                        <li><a href="soporte.html">Centro de soporte</a></li>
+                        <li>Correo: contacto@Voya.co</li>
+                        <li>Horario de atención: Lun–Vie, 8:00 AM - 5:00 PM</li>
+                    </ul>
+                    <p style="margin-top:10px;font-size:.78rem">WhatsApp: +57 318 2970125</p>
+                </div>
+            </div>
+            <div class="footer__bottom"><span>© 2026 VOYA · Proyecto académico</span><span>Innovación · Tecnología ·
+                    Soluciones</span></div>
+        </div>
+    </footer>
+</body>
+</html>
