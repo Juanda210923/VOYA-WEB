@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Itinerario - VOYA</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Menú de navegación global -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html">Inicio</a>
+      <a href="acerca.html">Acerca de</a>
+      <a href="favoritos.html">Mi itinerario</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Mi Itinerario</h1>
+    <div id="favorites-container"></div>
+  </main>
+
+  <script type="module">
+    import { renderFavorites, removeFavorite } from './js/favorites.js';
+    
+    window.removeFavorite = removeFavorite;
+    document.addEventListener('DOMContentLoaded', renderFavorites);
+  </script>
+
+</body>
+</html>
