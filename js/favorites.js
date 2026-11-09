@@ -1,4 +1,4 @@
-// favorites.js - Lógica para administrar la lista de favoritos
+// almacenamiento de archivos/Favoritos:
 
 import { getFavorites, saveFavorites } from './storage.js';
 
@@ -19,10 +19,9 @@ export function addFavorite(item) {
   }
 }
 
-/**
- * Elimina un lugar de la lista de favoritos usando su 'id'.
- * @param {string|number} id 
- */
+//Elimina un lugar de la lista de favoritos usando su 'id', 
+// @param {string|number} id :
+ 
 export function removeFavorite(id) {
   let favorites = getFavorites();
   favorites = favorites.filter(fav => fav.id !== id);
@@ -32,10 +31,7 @@ export function removeFavorite(id) {
   renderFavorites();
 }
 
-/**
- * Muestra los favoritos en el contenedor de favoritos.html.
- * Maneja el estado vacío cuando no hay nada guardado.
- */
+//Muestra los favoritos en el contenedor de favoritos.html.
 export function renderFavorites() {
   const container = document.getElementById('favorites-container');
   if (!container) return; // Si la página actual no tiene el contenedor, se omite
