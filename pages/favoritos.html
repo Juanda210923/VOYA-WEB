@@ -45,44 +45,9 @@
         <!-- sección #2-->
         <section class="section">
             <div class="container">
-                <div class="grid grid--3">
-                    <article class="destination-card"><img class="destination-card__image"
-                            src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=900&q=80"
-                            alt="Madrid">
-                        <div class="destination-card__body">
-                            <div class="card-row">
-                                <h3>Madrid, España</h3><span class="heart">♥</span>
-                            </div>
-                            <p class="destination-card__meta">Cultura · Ciudad</p><a class="btn btn--primary btn--small"
-                                href="destino.html">Ver detalle →</a>
-                        </div>
-                    </article>
+                <!-- Contenedor dinámico: favorites.js dibuja aquí las tarjetas -->
+                <div class="grid grid--3" id="favorites-container"></div>
 
-                    <article class="destination-card"><img class="destination-card__image"
-                            src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80"
-                            alt="París">
-                        <div class="destination-card__body">
-                            <div class="card-row">
-                                <h3>París, Francia</h3><span class="heart">♥</span>
-                            </div>
-                            <p class="destination-card__meta">Arte · Gastronomía</p><a
-                                class="btn btn--primary btn--small" href="explorar.html">Ver detalle →</a>
-                        </div>
-                    </article>
-
-                    <article class="destination-card"><img class="destination-card__image"
-                            src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=900&q=80"
-                            alt="Cartagena">
-                        <div class="destination-card__body">
-                            <div class="card-row">
-                                <h3>Cartagena, Colombia</h3><span class="heart">♥</span>
-                            </div>
-                            <p class="destination-card__meta">Playa · Historia</p><a class="btn btn--primary btn--small"
-                                href="explorar.html">Ver detalle →</a>
-                        </div>
-                    </article>
-
-                </div>
                 <div class="empty-state" style="margin-top:28px">
                     <div class="empty-state__icon">♡</div>
                     <h2 style="font-size:1.5rem">Tu lista, a tu manera</h2>
@@ -128,6 +93,13 @@
                     Soluciones</span></div>
         </div>
     </footer>
-</body>
 
+    <!-- Script del compañero (ruta con ../ porque este archivo está en pages/) -->
+    <script type="module">
+        import { renderFavorites, removeFavorite } from '../js/favorites.js';
+
+        window.removeFavorite = removeFavorite;
+        document.addEventListener('DOMContentLoaded', renderFavorites);
+    </script>
+</body>
 </html>
