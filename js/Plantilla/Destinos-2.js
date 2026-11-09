@@ -1,5 +1,4 @@
 //catalofo con los datos y id correspondiente:
-
 const DESTINOS = {
   madrid: {
     id: 'madrid',
