@@ -1,0 +1,106 @@
+<!-- inicio de pagina -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="VOYA: descubre destinos y planifica tu próximo viaje.">
+    <title>VOYA — Favoritos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<!-- cuerpo/menu-->
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a class="header__brand" href="../index.html"><span class="brand-mark"
+                    aria-hidden="true">✈</span><span>VOYA</span></a>
+            <nav class="nav" aria-label="Navegación principal">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="../index.html">Inicio</a></li>
+                    <li><a class="nav__link" href="explorar.html">Explorar</a></li>
+                    <li><a class="nav__link" href="ofertas.html">Ofertas</a></li>
+                    <li><a class="nav__link active" href="favoritos.html">Favoritos</a></li>
+                    <li><a class="nav__link" href="soporte.html">Soporte</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions"><a class="btn btn--pill btn--primary" href="login.html">Iniciar sesión</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- secciónes -->
+    <main>
+        <!-- sección #1-->
+        <!-- si no se guarda ninguno -->
+        <section class="page-hero">
+            <div class="container"><span class="eyebrow">Tu colección de viajes</span>
+                <h1>Tus lugares favoritos</h1>
+                <p>Reúne aquí la inspiración para tus próximas aventuras y vuelve a consultar los lugares que te
+                    interesan.</p>
+            </div>
+        </section>
+
+        <!-- sección #2-->
+        <section class="section">
+           <!-- contenedor de tarjetas-->
+            <div class="container">
+                <div class="grid grid--3" id="favorites-container"></div>
+
+                <div class="empty-state" id="favorites-empty" style="margin-top:28px">
+                    <div class="empty-state__icon">♡</div>
+                    <h2 style="font-size:1.5rem">Tu lista, a tu manera</h2>
+                    <p>Guarda tus destinos favoritos para que no te pierdas ninguna ofertas.📍✅.</p><a
+                        class="btn btn--primary btn--pill" style="margin-top:18px" href="explorar.html">Explorar
+                        destinos</a>
+                </div>
+                <p class="notice">Inicia sesión para guardar tus próximas experiencias 🚀</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- pie de pagina -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div><a class="header__brand" href="../index.html"><span class="brand-mark">✈</span><span
+                            style="color:#fff">VOYA</span></a>
+                    <p style="margin-top:16px">Si hay un destino, VOYA encuentra el camino. Descubre lugares, organiza
+                        ideas y encuentra inspiración para tu próximo viaje.</p>
+                </div>
+
+                <div>
+                    <h3>Explora VOYA</h3>
+                    <ul class="footer__links">
+                        <li><a href="explorar.html">Destinos turísticos</a></li>
+                        <li><a href="ofertas.html">Ofertas y experiencias</a></li>
+                        <li><a href="favoritos.html">Tus favoritos</a></li>
+                        <li><a href="login.html">Iniciar sesión</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Estamos para ayudarte</h3>
+                    <ul class="footer__links">
+                        <li><a href="soporte.html">Centro de soporte</a></li>
+                        <li>Correo: contacto@Voya.co</li>
+                        <li>Horario de atención: Lun–Vie, 8:00 AM - 5:00 PM</li>
+                    </ul>
+                    <p style="margin-top:10px;font-size:.78rem">WhatsApp: +57 318 2970125.</p>
+                </div>
+            </div>
+            <div class="footer__bottom"><span>© 2026 VOYA · Proyecto académico</span><span>Innovación · Tecnología ·
+                    Soluciones</span></div>
+        </div>
+    </footer>
+
+    <!-- implementación de Javascript -->
+    <script type="module">
+        import { renderFavorites } from '../js/almacen/favorites.js';
+
+        renderFavorites();
+        window.addEventListener('storage', renderFavorites);
+    </script>
+</body>
+</html>
